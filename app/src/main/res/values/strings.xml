@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GPS UNICORDOBA</string>
+    <string name="gps">GPS UNICORDOBA</string>
+    <string name="latitud">LATITUD</string>
+    <string name="longitud">LONGITUD</string>
+    <string name="altitud">ALTITUD</string>
+    <string name="descripcion">Finca y Municipio</string>
+    <string name="guardar">Guardar</string>
+    <string name="exportar">Eportar</string>
+    <string name="datos">GPS  no requiere una conexión de datos para funcionar, ya que se
+        comunica directamente vía satélite, pero si requiere que la ubicación si esté activa.</string>
+    <string name="textoBoton">Mostrar Latitud y Longitud</string>
+</resources>

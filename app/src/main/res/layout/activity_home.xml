@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Home">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="411dp"
+            android:layout_height="726dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/fondob" />
+
+        <TextView
+            android:id="@+id/txvUbicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="@string/latitud"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/txvUbicacion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/longitud"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/txvUbicacion" />
+
+        <TextView
+            android:id="@+id/txvUbicacion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/altitud"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/txvUbicacion2" />
+
+        <Button
+            android:id="@+id/btnMostrar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#4CAF50"
+            android:text="@string/textoBoton"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/txvUbicacion3" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.10" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="280dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/datos"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/btnGuatdar" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="181dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="144dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            app:srcCompat="@drawable/sg" />
+
+        <EditText
+            android:id="@+id/txtDatos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/descripcion"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/btnMostrar" />
+
+        <Button
+            android:id="@+id/btnGuatdar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/guardar"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/txtDatos" />
+
+        <Button
+            android:id="@+id/btnExportar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/exportar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="84dp"
+            android:layout_height="158dp"
+            android:layout_marginTop="80dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
